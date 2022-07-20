@@ -6,7 +6,7 @@ const PostsPage = () => {
   const [postsData, setPostsData] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('http://localhost:5000/posts')
+    fetch('https://instaclone-server-ashutosh.herokuapp.com/posts')
     .then((res) => res.json())
     .then((res) => {setPostsData(res)})
   }, []);
