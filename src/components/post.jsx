@@ -5,7 +5,7 @@ const Post = (props) => {
   const [likes, setLikes] = React.useState(info.likes);
 
   const handleClick = () => {
-    fetch('https://instaclone-server-ashutosh.herokuapp.com/like', {
+    fetch('http://localhost:5000/like', {
       method: 'PATCH',
       body: JSON.stringify({
         _id: info._id,
@@ -19,7 +19,7 @@ const Post = (props) => {
     .then(res => setLikes(res.likes))
   }
 
-  const prePath = 'https://instaclone-server-ashutosh.herokuapp.com';
+  const prePath = 'http://localhost:5000';
   return (
     <>
       <div className='post-card'>
