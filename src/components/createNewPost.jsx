@@ -61,7 +61,7 @@ const Form = () => {
     //   }
     // }) 
     await axios.post(
-      'http://localhost:5000/post',
+      'https://instaclone-server-ashutosh.herokuapp.com/post',
       formData,
       { 'content-type': 'multipart/form-data' },
     )
