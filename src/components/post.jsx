@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Post = (props) => {
+  console.log(props);
   const info = props.postData;
   const [likes, setLikes] = React.useState(info.likes);
 

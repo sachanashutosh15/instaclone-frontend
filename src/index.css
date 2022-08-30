@@ -201,3 +201,20 @@ image-name button {
   justify-content: center;
   padding: 5em;
 }
+
+.navBtn {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.navigationBtn-prev {
+  position: fixed;
+  left: 20%;
+  top: 50%;
+}
+
+.navigationBtn-next {
+  position: fixed;
+  right: 20%;
+  top: 50%;
+}

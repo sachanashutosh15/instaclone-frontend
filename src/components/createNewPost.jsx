@@ -30,6 +30,7 @@ const Form = () => {
   function handleChange(e) {
     const {name, value} = e.target;
     setPostData(prevPostData => ({...prevPostData, [name]: value}));
+    console.log(postData.author);
   }
 
   const handleUpload = (event) => {
@@ -47,6 +48,7 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(postData);
     const formData = new FormData();
     formData.append('imageName', postData.imageName);
     formData.append('author', postData.author);

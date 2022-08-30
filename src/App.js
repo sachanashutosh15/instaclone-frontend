@@ -17,6 +17,7 @@ function App() {
           <Route path='/' element={<LandingPage />} />
           <Route path='/posts' element={<PostsPage />} />
           <Route path='/newPost' element={<CreateNewPost />} />
+          <Route path='/test' element={<FormTest />} />
         </Routes>
       </BrowserRouter>
     </>
